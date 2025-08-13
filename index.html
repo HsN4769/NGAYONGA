@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mama Mboga Digital - Selling fresh vegetables, fruits and maize digitally in East Africa" />
+  <meta name="keywords" content="mama mboga, digital vegetables, online produce, fresh fruits, East Africa, digital farming" />
+  <meta name="author" content="NgayongA" />
+  <meta property="og:title" content="Mama Mboga Digital" />
+  <meta property="og:description" content="Fresh produce delivered digitally in East Africa" />
+  <meta property="og:type" content="website" />
+  <title>Mama Mboga Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">🌿 <span>Mama Mboga</span></div>
+      <div class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#home" class="nav-link active" data-lang-key="home">Nyumbani</a></li>
+          <li><a href="#services" class="nav-link" data-lang-key="services">Huduma</a></li>
+          <li><a href="#gallery" class="nav-link" data-lang-key="ProductNav">Bidhaa</a></li>
+          <li><a href="#testimonials" class="nav-link" data-lang-key="testimonials">Ushuhuda</a></li>
+          <li><a href="#contact" class="nav-link" data-lang-key="contact">Wasiliana</a></li>
+          <li>
+            <select id="language-switch" aria-label="Badilisha Lugha">
+              <option value="sw">🇰🇪 Kiswahili</option>
+              <option value="en">🇬🇧 English</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <div class="hero-image">
+        <img src="image/subi.JPG" alt="Mama Mboga" />
+      </div>
+      <div class="hero-text">
+        <h1 data-lang-key="heroTitle">Karibu Mama Mboga Digital</h1>
+        <p data-lang-key="heroDesc">Tunakuwezesha kuuza mboga na matunda kwa njia ya kidigitali.</p>
+        <a href="#services" class="btn" data-lang-key="heroBtn">Jifunze Zaidi</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <h2 data-lang-key="servicesTitle">Huduma Zetu</h2>
+      <div class="service-list">
+        <div class="service" data-lang-key="service1">📦 Usafirishaji wa bidhaa</div>
+        <div class="service" data-lang-key="service2">📱 Uuzaji kupitia simu (USSD/SMS)</div>
+        <div class="service" data-lang-key="service3">💳 Malipo ya kidigitali</div>
+        <div class="service" data-lang-key="service4">🌽 Uuzaji wa mahindi safi</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search functionality -->
+  <section class="search-section">
+    <div class="container">
+      <div class="search-container">
+        <input type="text" id="product-search" placeholder="Tafuta bidhaa..." data-lang-key="searchPlaceholder" />
+        <button id="search-button"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 data-lang-key="galleryTitle">Picha za Bidhaa Zetu</h2>
+      
+      <!-- Product Categories -->
+      <div class="product-categories">
+        <button class="category-btn active" data-category="all" data-lang-key="catAll">Zote</button>
+        <button class="category-btn" data-category="vegetables" data-lang-key="catVegetables">Mboga</button>
+        <button class="category-btn" data-category="fruits" data-lang-key="catFruits">Matunda</button>
+        <button class="category-btn" data-category="cereals" data-lang-key="catCereals">Nafaka</button>
+      </div>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item" data-product="vegetables">
+          <img src="image/vegetables.jpeg" alt="Mboga Fresh" loading="lazy" />
+          <p data-lang-key="productVeg">Mboga Fresh</p>
+          <div class="product-overlay">
+            <div class="product-actions">
+              <button class="quick-view-btn" data-product="vegetables"><i class="fas fa-eye"></i> <span data-lang-key="viewBtn">Angalia</span></button>
+              <button class="add-to-cart-btn" data-product="vegetables" data-price="200"><i class="fas fa-shopping-cart"></i> <span data-lang-key="addCartBtn">Ongeza</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-product="fruits">
+          <img src="image/fruits.jpeg" alt="Matunda Safi" loading="lazy" />
+          <p data-lang-key="galleryFruit">Matunda Safi</p>
+          <div class="product-overlay">
+            <div class="product-actions">
+              <button class="quick-view-btn" data-product="fruits"><i class="fas fa-eye"></i> <span data-lang-key="viewBtn">Angalia</span></button>
+              <button class="add-to-cart-btn" data-product="fruits" data-price="250"><i class="fas fa-shopping-cart"></i> <span data-lang-key="addCartBtn">Ongeza</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-product="cereals">
+          <img src="image/maize.jpeg" alt="Mahindi Safi" loading="lazy" />
+          <p data-lang-key="galleryMaize">Mahindi Safi</p>
+          <div class="product-overlay">
+            <div class="product-actions">
+              <button class="quick-view-btn" data-product="cereals"><i class="fas fa-eye"></i> <span data-lang-key="viewBtn">Angalia</span></button>
+              <button class="add-to-cart-btn" data-product="cereals" data-price="180"><i class="fas fa-shopping-cart"></i> <span data-lang-key="addCartBtn">Ongeza</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Shopping Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 data-lang-key="cartTitle">Kikapu cha Ununuzi</h2>
+      <div id="cart-items">
+        <!-- Cart items will be added dynamically here -->
+      </div>
+      <div class="cart-total">
+        <p data-lang-key="cartTotal">Jumla: <span id="cart-total-amount">0</span> TZS</p>
+      </div>
+      <button id="checkout-btn" class="btn" data-lang-key="checkoutBtn">Lipia Sasa</button>
+    </div>
+  </div>
+  
+  <!-- Quick View Modal -->
+  <div id="quick-view-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="quick-view-content">
+        <!-- Product details will be added dynamically here -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 data-lang-key="testimonialsTitle">Maoni ya Wateja</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-slide active">
+          <div class="testimonial-content">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p data-lang-key="testimonial1Text">Huduma ya Mama Mboga ni ya hali ya juu. Mboga zao ni safi na bei ni nafuu. Napendekeza sana!</p>
+            <div class="testimonial-author" data-lang-key="testimonial1Author">- Mwanaisha J.</div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p data-lang-key="testimonial2Text">Huduma ya kuagiza kupitia simu ni rahisi sana. Nilipata matunda yangu yakiwa fresh na kwa wakati.</p>
+            <div class="testimonial-author" data-lang-key="testimonial2Author">- Baraka T.</div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p data-lang-key="testimonial3Text">Mahindi yao ni matamu sana! Na huduma ya usafirishaji ni ya kuridhisha kabisa.</p>
+            <div class="testimonial-author" data-lang-key="testimonial3Author">- Fatuma M.</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+        <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form" id="contact">
+    <div class="container">
+      <h2 data-lang-key="contactTitle">Wasiliana Nasi</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>📞 +255 622273287</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p data-lang-key="location">Dar es Salaam, Tanzania</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>info@mamamboga.co.tz</p>
+          </div>
+          <div class="contact-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form-element">
+          <div class="form-group">
+            <label for="name" data-lang-key="formName">Jina</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone" data-lang-key="formPhone">Namba ya Simu</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="message" data-lang-key="formMessage">Ujumbe</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn submit-btn" data-lang-key="formSubmit">Tuma Ujumbe</button>
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-sections">
+        <div class="footer-section">
+          <h3 data-lang-key="footerAbout">Kuhusu Sisi</h3>
+          <p data-lang-key="footerAboutText">Tunauza mboga na matunda safi kwa njia ya kidigitali, ili kukuwezesha kupata chakula bora kwa urahisi.</p>
+        </div>
+        <div class="footer-section">
+          <h3 data-lang-key="footerQuickLinks">Viungo vya Haraka</h3>
+          <ul class="footer-links">
+            <li><a href="#home" data-lang-key="home">Nyumbani</a></li>
+            <li><a href="#services" data-lang-key="services">Huduma</a></li>
+            <li><a href="#gallery" data-lang-key="ProductNav">Bidhaa</a></li>
+            <li><a href="#testimonials" data-lang-key="testimonials">Ushuhuda</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 data-lang-key="footerContact">Wasiliana Nasi</h3>
+          <p data-lang-key="footerContactText">Wasiliana nasi kupitia WhatsApp au SMS.</p>
+          <p>📞 +255 622273287</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 Mama Mboga Digital | @By NgayongA</p>
+        <div class="footer-logo-wrapper">
+          <img src="image/subi.JPG" alt="Mama Mboga Logo" class="footer-logo" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
